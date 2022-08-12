@@ -2,7 +2,7 @@
 
 namespace SavePassword.API.Application.Entity
 {
-    public class Secret : BaseModel
+    public class Secret : BaseEntity
     {
         public string Name { get; set; }
         public string? IconUrl { get; set; }

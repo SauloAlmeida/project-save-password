@@ -1,6 +1,6 @@
 ﻿namespace SavePassword.API.Application.Entity.Common
 {
-    public abstract class BaseModel
+    public abstract class BaseEntity
     {
         public Guid Id { get; set; } = Guid.NewGuid();
         public DateTime CreatedAt { get; set; } = DateTime.Now;

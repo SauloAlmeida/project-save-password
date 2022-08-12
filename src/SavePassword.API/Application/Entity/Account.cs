@@ -2,7 +2,7 @@
 
 namespace SavePassword.API.Application.Entity
 {
-    public class Account : BaseModel
+    public class Account : BaseEntity
     {
         public string? NickName { get; set; }
         public string Login { get; set; }
