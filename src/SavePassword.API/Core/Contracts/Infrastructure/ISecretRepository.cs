@@ -5,10 +5,10 @@ namespace SavePassword.API.Core.Contracts.Infrastructure
 {
     public interface ISecretRepository
     {
-        Task<IList<Secret>> GetAllAsync(CancellationToken ct);
-        Task<Secret> GetAsync(Guid id);
+        IQueryable<Secret> GetAll();
+        Secret GetAsync(string id);
         Task AddAsync(SecretInputModel dto, CancellationToken ct);
-        Task UpdateAsync(Guid id, SecretInputModel dto, CancellationToken ct);
-        Task DeleteAsync(Guid id);   
+        Task UpdateAsync(string id, SecretInputModel dto, CancellationToken ct);
+        Task DeleteAsync(string id, CancellationToken ct);
     }
 }

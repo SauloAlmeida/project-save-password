@@ -4,9 +4,9 @@ namespace SavePassword.API.Application.Entity
 {
     public class Account : BaseEntity
     {
-        public string? NickName { get; set; }
+        public string NickName { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
-        public string? Note { get; set; }
+        public string Note { get; set; }
     }
 }
